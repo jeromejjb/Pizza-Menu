@@ -7,12 +7,14 @@
         <th>Item</th>
         <th>Price</th>
         <th>Size</th>
+        <th>Category</th>
         <th>Description</tr>
+        
     <tr *ngFor="let menuitem of pizzaMenu">
         <td> {{menuitem.name}}</td>
         <td>{{menuitem.price}}</td>
-        
         <td>{{menuitem.size}}</td>
+        <td>{{menuitem.category}}</td>
         <td>
             <p *ngFor="let description of menuitem.description">
                 {{description}}
