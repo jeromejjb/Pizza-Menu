@@ -1,0 +1,23 @@
+
+
+<h1 >Welcome to Chirpus Pizza!</h1>
+
+<table>
+    <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Size</th>
+        <th>Description</tr>
+    <tr *ngFor="let menuitem of pizzaMenu">
+        <td> {{menuitem.name}}</td>
+        <td>{{menuitem.price}}</td>
+        
+        <td>{{menuitem.size}}</td>
+        <td>
+            <p *ngFor="let description of menuitem.description">
+                {{description}}
+            </p>
+        </td>
+
+    </tr>
+</table>
